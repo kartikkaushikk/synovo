@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+backend/venv/
+*.egg-info/
+dist/
+build/
+.env
+*.log
+
+# AI model cache
+.cache/
+/models/
+/backend/models/
+*.pt
+*.bin
+*.safetensors
+
+# DB / storage
+*.db
+*.sqlite
+media/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.vercel/
+
+# Docker volumes
+postgres_data/
+qdrant_data/
+
+# Celery
+celerybeat-schedule
+backend/celerybeat-schedule
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local docs
+Implementation.md
+TESTING_GUIDE.md

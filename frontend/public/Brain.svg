@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7BA7FF"/>
+      <stop offset="100%" stop-color="#4F7DF3"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g
+    fill="none"
+    stroke="url(#brainGradient)"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow)"
+  >
+    <!-- Outer Brain -->
+    <path d="
+      M180 90
+      C120 90 80 135 80 190
+      C50 205 32 235 32 270
+      C32 315 62 350 105 360
+      C112 415 155 450 205 450
+      C235 450 255 435 256 410
+      L256 110
+      C245 97 220 90 180 90
+    "/>
+
+    <path d="
+      M332 90
+      C392 90 432 135 432 190
+      C462 205 480 235 480 270
+      C480 315 450 350 407 360
+      C400 415 357 450 307 450
+      C277 450 257 435 256 410
+      L256 110
+      C267 97 292 90 332 90
+    "/>
+
+    <!-- Left folds -->
+    <path d="M170 145 C130 165 130 215 175 225"/>
+    <path d="M145 255 C105 270 105 320 160 335"/>
+    <path d="M175 350 C140 365 145 405 190 420"/>
+
+    <!-- Right folds -->
+    <path d="M342 145 C382 165 382 215 337 225"/>
+    <path d="M367 255 C407 270 407 320 352 335"/>
+    <path d="M337 350 C372 365 367 405 322 420"/>
+
+    <!-- Center -->
+    <line x1="256" y1="115" x2="256" y2="410"/>
+  </g>
+</svg>
